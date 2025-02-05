@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Admin Pannel</title>
+        <link rel=stylesheet href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet" href="admin.css">
+    </head>
+    <body>
+        <section class="sidebar">
+            <div class="container">
+                <div class="content">
+                    <div class="content1">
+                        <h1> Modular </h1>
+                        <button class="btn"> Free Version </button>
+                    </div>
+                    <div class="content2">
+                              <form>
+                                <div class="search_bar">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <input type="text" id="sengine" placeholder="Search...">
+                               </form>
+                    </div>
+                    <div class="content3">
+                        <h5>ANALYTICS</h5>
+                        <ul id="scontent">
+                            <li><a href="#"><img src="../image/dashboard.png">Dashboard</a></li>
+                            <li><a href="#"><img src="../image/analytics.png">Analytics</a></li>
+                            <li><a href="#"><img src="../image/payments.png">Payments</a></li>
+                            <li class="drop_down_area"><a href="javascript:void(0);"><img src="../image/products.png">Products</a>
+                                <ul class="drop_down">
+                                   <li><a href="#">Published</a></li>
+                                   <li><a href="#">Draft</a></li>
+                                   <li><a href="#">Under Review</a></li>
+                                   <li><a href="#">Earnings</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><img src="../image/reports.png">Reports</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="content4">
+                        <div class="box1"></div>
+                        <div class="box2">
+                            <div class="get">
+                                <a href="#"> Get Premium Membership</a>
+                            </div>
+                        </div>
+                  
+                    </div>
+                    <div class="content5">
+                        <div class="sl">
+                            <img src="../image/setting.png" alt="">
+                            <a href="#">Settings</a>
+                        </div>
+                        <div class="sl">
+                            <img src="../image/logout.png" alt="">
+                            <a href="#">Logout</a>
+                        </div>
+                    </div>
+                    
+                    <div class="content6">
+                        <div class="mode1">
+                        <a href="javascript:void(0)" id = mod1><img src="../image/light-mode.png">LIght Mode</a>
+                        </div>
+                        <div class="mode2">
+                        <a href="javascript:void(0)" id = mod2><img src="../image/dark-mode.png">Dark Mode</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section class="interface">
+            <div class="content7">
+                <form>
+                    <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input type="text" placeholder="Search...">
+                </form>
+            </div>
+            <div class="content8">
+                <div id="message"><h4>Hii friend ................<br>...................</h4></div>
+                <a href="#" onclick="msg()"><img src="../image/inbox.png" alt=""></a>
+                <a href="#"><img src="../image/setting2.png" alt=""></a>
+                <div id="pop_up"><h4>Hii sudhanshu thanks for coming in<br> notification but unfortunately there<br> is no message for you </h4></div>
+                <a href="notification.html" onclick="myfunction()"><img src="../image/notification.png"></a>
+                <a href="#"><img src="../image/black-circle.png" alt=""></a>
+                <a href="#"><img src="../image/arrow.png" alt=""></a>
+            </div>
+        </section>
+        
+        
+        <section class="interface2">
+            <div class="product">
+                <h4>Product Earnings</h4>
+                <a href="#"><img src="../image/dotted-icon.png"></a>
+            </div>
+            <div class="first">
+              <div class="circular_progress1">
+                  <div class="p-value">80%</div>
+              </div>
+                <div class="income">
+                    <h5>Total Income</h5>
+                    <h2>$ 8,210.00</h2>
+                    <h5><img src="../image/up.png">3.96%</h5>
+                </div>
+                <div class="plus">
+                    <div class="box">
+                        <a><i class="fa-solid fa-arrow-up"></i></a>
+                    </div>
+                    <h5>+20.90%</h5>
+                </div>
+            </div>
+             <div class="second">
+              <div class="circular_progress2">
+                  <div class="p-value2">79%</div>
+              </div>
+                <div class="payment">
+                    <h5>Total Payments</h5>
+                    <h2>$ 5,220.00</h2>
+                    <h5><img src="../image/up.png">9.64%</h5>
+                </div>
+                <div class="plus2">
+                    <div class="box2">
+                        <a><i class="fa-solid fa-arrow-up"></i></a>
+                    </div>
+                    <h5>+11.76%</h5>
+                </div>
+            </div>
+            <div class="third">
+              <div class="circular_progress3">
+                  <div class="p-value3">52%</div>
+              </div>
+                <div class="expenses">
+                    <h5>Total Expenses</h5>
+                    <h2>$ 8,192.00</h2>
+                    <h5><img src="../image/up.png">9.64%</h5>
+                </div>
+                <div class="plus3">
+                    <div class="box3">
+                        <a><i class="fa-solid fa-arrow-up"></i></a>
+                    </div>
+                    <h5>+13.45%</h5>
+                </div>
+            </div>
+        </section>
+        
+        <section class="interface3">
+            <div class="stats">
+                <h4> Monthly Stats</h4>
+                <a href="#"><img src="../image/dotted-icon.png"></a>
+            </div>
+            
+        
+            <canvas id="myChart" aria-Label="chart" role="img" style="height:300px; width:315px;"></canvas>
+            
+            <div class="bottom">
+                <div class="bot">
+                    <div class="bot1"></div>
+                    <h6>Business Pro</h6>
+                </div>
+                <div class="bot2">
+                    <div class="bot3"></div>
+                    <h6>Basic Product</h6>
+                </div>
+            </div>
+        </section>
+        
+        <section class="interface4" >
+            <div class="pl">
+                <h4> Product List</h4>
+                <a href="#"><img src="../image/dotted-icon.png"></a>
+            </div>
+            
+            <div class="pn">
+                <h6> Product Name</h6>
+                <h6>Views</h6>
+            </div>
+            
+            <div class="pn1">
+                <input type="checkbox" name="product">
+                <div class="widget">
+                    <h5>01</h5>
+                </div>
+                <div class="widget1">
+                    <h4>UI Elements and Widgets</h4>
+                </div>
+                <div class="widget2">
+                    <h6>3890</h6>
+                </div>
+            </div>
+            
+            <div class="pn1">
+                <input type="checkbox" name="product">
+                <div class="asset">
+                    <h5>02</h5>
+                </div>
+                <div class="asset1">
+                    <h4>Creative Designer Assets</h4>
+                </div>
+                <div class="asset2">
+                    <h6>4785</h6>
+                </div>
+            </div>
+            
+            <div class="pn1">
+                <input type="checkbox" name="product">
+                <div class="compo">
+                    <h5>03</h5>
+                </div>
+                <div class="compo1">
+                    <h4>Designer Components</h4>
+                </div>
+                <div class="compo2">
+                    <h6>9712</h6>
+                </div>
+            </div>
+            
+            <div class="pn1">
+                <input type="checkbox" name="product">
+                <div class="card">
+                    <h5>04</h5>
+                </div>
+                <div class="caed1">
+                    <h4>UI Cards and Elements</h4>
+                </div>
+                <div class="card2">
+                    <h6>3993</h6>
+                </div>
+            </div>
+            
+               <div class="pn1">
+                <input type="checkbox" name="product">
+                <div class="design">
+                    <h5>05</h5>
+                </div>
+                <div class="design1">
+                    <h4>Dashboard interface Design</h4>
+                </div>
+                <div class="design2">
+                    <h6>1972</h6>
+                </div>
+            </div> 
+        </section>
+        
+        
+        <section class="interface5">
+            <div class="one">
+                <h3>Data Graph Analysis</h3>
+                <div class="one1">
+                    <select id="select_option"></select>
+                    <a href="#"><img src="../image/download.png">Download</a>
+                </div>
+            </div>
+            
+            <canvas id="barChart" style="height: 79%;width:100%;"></canvas>
+            
+            <div class="two">
+                <div class="ps">
+                <div class="d"></div>
+                    <h6>Product Sales</h6>
+                </div>
+                 <div class="ms">
+                    <div class="d1"></div>
+                    <h6>Marketing Sales</h6>
+                </div>
+            </div>
+        </section>
+        
+    
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="admin.js"></script>
+        
+        
+        
+    </body>
+</html>

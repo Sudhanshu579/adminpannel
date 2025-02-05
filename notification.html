@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Admin Pannel</title>
+        <link rel=stylesheet href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet" href="admin.css">
+		<link rel=stylesheet href="https://cdn.datatables.net/2.1.7/css/dataTables.dataTables.min.css">
+    </head>
+    <body>
+        <section class="sidebar">
+            <div class="container">
+                <div class="content">
+                    <div class="content1">
+                        <h1> Modular </h1>
+                        <button class="btn"> Free Version </button>
+                    </div>
+                    <div class="content2">
+                              <form>
+                                <div class="search_bar">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <input type="text" id="sengine" placeholder="Search...">
+                               </form>
+                    </div>
+                    <div class="content3">
+                        <h5>ANALYTICS</h5>
+                        <ul id="scontent">
+                            <li><a href="#"><img src="../image/dashboard.png">Dashboard</a></li>
+                            <li><a href="#"><img src="../image/analytics.png">Analytics</a></li>
+                            <li><a href="#"><img src="../image/payments.png">Payments</a></li>
+                            <li class="drop_down_area"><a href="javascript:void(0);"><img src="../image/products.png">Products</a>
+                                <ul class="drop_down">
+                                   <li><a href="#">Published</a></li>
+                                   <li><a href="#">Draft</a></li>
+                                   <li><a href="#">Under Review</a></li>
+                                   <li><a href="#">Earnings</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><img src="../image/reports.png">Reports</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="content4">
+                        <div class="box1"></div>
+                        <div class="box2">
+                            <div class="get">
+                                <a href="#"> Get Premium Membership</a>
+                            </div>
+                        </div>
+                  
+                    </div>
+                    <div class="content5">
+                        <div class="sl">
+                            <img src="../image/setting.png" alt="">
+                            <a href="#">Settings</a>
+                        </div>
+                        <div class="sl">
+                            <img src="../image/logout.png" alt="">
+                            <a href="#">Logout</a>
+                        </div>
+                    </div>
+                    
+                    <div class="content6">
+                        <div class="mode1">
+                        <a href="javascript:void(0)" id = mod1><img src="../image/light-mode.png">LIght Mode</a>
+                        </div>
+                        <div class="mode2">
+                        <a href="javascript:void(0)" id = mod2><img src="../image/dark-mode.png">Dark Mode</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section class="interface">
+            <div class="content7">
+                <form>
+                    <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input type="text" placeholder="Search...">
+                </form>
+            </div>
+            <div class="content8">
+                <div id="message"><h4>Hii friend ................<br>...................</h4></div>
+                <a href="#" onclick="msg()"><img src="../image/inbox.png" alt=""></a>
+                <a href="#"><img src="../image/setting2.png" alt=""></a>
+                <div id="pop_up"><h4>Hii sudhanshu thanks for coming in<br> notification but unfortunately there<br> is no message for you </h4></div>
+                <a href="admin.html" onclick="myfunction()"><img src="../image/notification.png"></a>
+                <a href="#"><img src="../image/black-circle.png" alt=""></a>
+                <a href="#"><img src="../image/arrow.png" alt=""></a>
+            </div>
+        </section>
+		
+		
+		<section class="table">
+			<table class="dftable" id="mytable" border="1px solid black" cellspacing="0px" cellpadding="50%" width="100%">
+				<thead>
+					<tr>
+						<th>SN NO</th>
+						<th>Name</th>
+						<th>Phone</th>
+						<th>Email</th>
+						<th>Address</th>
+						<th>Message</th>
+						<th>Time</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>sudhanshu bisht</td>
+						<td>0000000000</td>
+						<td>sidb@gmail.com</td>
+						<td>patel nagar</td>
+						<td>hii</td>
+						<td>12:45pm</td>
+					</tr>
+				</tbody>
+				
+			</table>
+		</section>
+		
+        
+        
+  
+		<script src="https://cdn.datatables.net/2.1.7/js/dataTables.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="notification.js"></script>
+        
+        
+        
+    </body>
+</html>
